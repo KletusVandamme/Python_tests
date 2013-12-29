@@ -1,4 +1,5 @@
 # This Class defines my rotating box
+#test
 import pygame, sys, random, math
 from hippo_SETTINGS import *
 
