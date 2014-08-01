@@ -8,7 +8,7 @@ wait_time_ms = 70
 
 def run_game(): 
 	pygame.init()
-	screen.fill(GRAY)
+	screen.fill(LIME)
 	pygame.display.set_caption('Polygon Madness!!!')
 	global rotation_increment_deg
 	global wait_time_ms
@@ -17,7 +17,8 @@ def run_game():
 	for i in range (0,num_poly):
 		#create a random color for each poly
 		poly_color = DICT_color[random.randint(1, len(DICT_color))]
-		num_vertex = random.randint(1, 7)
+		# num_vertex = random.randint(1, 7)
+		num_vertex = 5
 		
 		poly = Poly(num_vertex, radius, poly_color, (center[0] + i*10, (center[1]+ i*5)), move_x, move_y, radius, rot_angle_deg=10)
 		polys.append(poly)
@@ -32,7 +33,7 @@ def run_game():
 		if deg > 360:
 			deg -= 360
 
-		screen.fill(GRAY)
+		screen.fill(LIME)
 		for i in range (0,num_poly):
 			this_poly = polys[i]
 			#rotate each poly

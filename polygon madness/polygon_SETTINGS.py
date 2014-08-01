@@ -3,7 +3,7 @@ import pygame, sys, random, math
 pygame.init()
 
 # Screen parameters
-screen_width, screen_height = 1000, 1000
+screen_width, screen_height = 600, 600
 screen = pygame.display.set_mode((screen_width, screen_height), 0, 32)
 
 # Set up the colors

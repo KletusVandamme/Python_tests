@@ -109,14 +109,14 @@ def run_game():
 		for seg in word_segment_array:
 			seg.draw()
 		pygame.display.update()
-		pygame.time.wait(200)
+		pygame.time.wait(400)
 
 
 
 
 	wait_for_input()
 #------------------------------------------------------------------------------
-
+ 
 def wait_for_input():
 	mouseClicked = False
 	while mouseClicked == False: 

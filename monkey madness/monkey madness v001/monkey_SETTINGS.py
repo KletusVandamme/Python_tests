@@ -6,7 +6,7 @@ pygame.init()
 myfont = pygame.font.SysFont("Emilbus Mono", 50)
 
 # Screen parameters
-screen_width, screen_height = 1920, 1080
+screen_width, screen_height = 1400, 800
 screen = pygame.display.set_mode((screen_width, screen_height), 0, 32)
 
 # Set up the colors
